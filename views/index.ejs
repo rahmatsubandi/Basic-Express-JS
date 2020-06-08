@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Express Basic JS</title>
+  </head>
+  <body>
+    <p>Nama saya : <%=name %></p>
+    <p>Umur saya : <%=umur %></p>
+    <p>Cita-cita saya : <%= cita %></p>
+    <li>Hobi</li>
+    <!-- Mmebuat looping -->
+    <%for(let i = 0; i< hobi.length; i++){ %>
+    <ul>
+      <!-- Melakukan Loping -->
+      <%= hobi[i].name %>
+    </ul>
+    <% } %>
+  </body>
+</html>
